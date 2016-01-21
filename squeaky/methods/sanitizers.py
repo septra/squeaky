@@ -7,8 +7,9 @@ def remove_digits(arg):
     Accepts: String, List of Strings, Pandas series Object
 
     eg:
-    squeaky.remove_digits(["hello123", "442 Avenue"])
-    >>> ["hello", "Avenue"]
+
+    >>> remove_digits(["hello123", "442 Avenue"])
+    ['hello', ' Avenue']
     """
     return remove_functionality(arg, "[0-9]")
 
@@ -18,8 +19,8 @@ def remove_letters(arg):
     Accepts: String, List of Strings, Pandas series Object
 
     eg:
-    squeaky.remove_letters(["hello123", "442 Avenue"])
-    >>> ["123", "442 "]
+    >>> remove_letters(["hello123", "442 Avenue"])
+    ['123', '442 ']
     """
     return remove_functionality(arg, "[A-Za-z]")
 
@@ -29,8 +30,8 @@ def remove(arg, chars):
     Accepts: String, List of Strings, Pandas series Object
 
     eg:
-    squeaky.remove(["hello123", "442 Avenue"], "e2")
-    >> ["hllo13", "44 Avnu"]
+    >>> remove(["hello123", "442 Avenue"], "e2")
+    ['hllo13', '44 Avnu']
     """
     return remove_functionality(arg, "[%s]" % chars)
 
