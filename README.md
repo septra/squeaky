@@ -1,4 +1,4 @@
-H1 A python library to **clean** and **manipulate** data.
+A python library to **clean** and **manipulate** data.
 ---
 
 FEATURES (TODO):
